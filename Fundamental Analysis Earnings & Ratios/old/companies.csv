@@ -1,0 +1,15 @@
+company_id,symbol,company_name,sector,industry
+1,MSFT,Microsoft Corporation,Technology,Software - Infrastructure
+2,AAPL,Apple Inc.,Technology,Consumer Electronics
+3,AVGO,Broadcom Inc.,Technology,Semiconductors
+4,XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated
+5,ORCL,Oracle Corporation,Technology,Software - Infrastructure
+6,CVX,Chevron Corporation,Energy,Oil & Gas Integrated
+7,CRM,"Salesforce, Inc.",Technology,Software - Application
+8,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment
+9,CAT,Caterpillar Inc.,Industrials,Farm & Heavy Construction Machinery
+10,QCOM,QUALCOMM Incorporated,Technology,Semiconductors
+11,INTU,Intuit Inc.,Technology,Software - Application
+12,IBM,International Business Machines Corporation,Technology,Information Technology Services
+13,GE,GE Aerospace,Industrials,Aerospace & Defense
+14,COP,ConocoPhillips,Energy,Oil & Gas E&P

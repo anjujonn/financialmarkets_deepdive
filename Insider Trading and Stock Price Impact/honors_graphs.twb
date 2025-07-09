@@ -1,0 +1,1615 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='honors_graphs' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='above_and_beyond (above_and_beyond)' inline='true' name='federated.15zstm80ln8wak176ddhv0zmz3dp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='above_and_beyond_2' name='excel-direct.1fih92h0zg9jud11fuam41dha1iv'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/learner/Documents/Ananya/4701/honors/above_and_beyond_2.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1fih92h0zg9jud11fuam41dha1iv' name='above_and_beyond_2' table='[above_and_beyond_2$]' type='table'>
+          <columns gridOrigin='A1:J29:no:A1:J29:0' header='yes' outcome='6'>
+            <column datatype='string' name='company_name' ordinal='0' />
+            <column datatype='string' name='symbol' ordinal='1' />
+            <column datatype='string' name='insider_name' ordinal='2' />
+            <column datatype='date' name='trade_date' ordinal='3' />
+            <column datatype='string' name='trade_type' ordinal='4' />
+            <column datatype='integer' name='shares_traded' ordinal='5' />
+            <column datatype='integer' name='trade_price' ordinal='6' />
+            <column datatype='integer' name='volume_before' ordinal='7' />
+            <column datatype='integer' name='volume_after' ordinal='8' />
+            <column datatype='real' name='percent_volume_change' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J29:no:A1:J29:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[company_name]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>company_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[symbol]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insider_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[insider_name]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>insider_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[trade_date]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>trade_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[trade_type]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>trade_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shares_traded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shares_traded]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>shares_traded</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trade_price]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>trade_price</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume_before</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[volume_before]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>volume_before</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volume_after</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[volume_after]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>volume_after</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_volume_change</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_volume_change]</local-name>
+            <parent-name>[above_and_beyond_2]</parent-name>
+            <remote-alias>percent_volume_change</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='above_and_beyond_2' datatype='table' name='[__tableau_internal_object_id__].[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]' role='measure' type='quantitative' />
+      <column caption='Company Name' datatype='string' name='[company_name]' role='dimension' type='nominal' />
+      <column caption='Insider Name' datatype='string' name='[insider_name]' role='dimension' type='nominal' />
+      <column caption='Percent Volume Change' datatype='real' name='[percent_volume_change]' role='measure' type='quantitative' />
+      <column caption='Shares Traded' datatype='integer' name='[shares_traded]' role='measure' type='quantitative' />
+      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+      <column caption='Trade Date' datatype='date' name='[trade_date]' role='dimension' type='ordinal' />
+      <column caption='Trade Price' datatype='integer' name='[trade_price]' role='measure' type='quantitative' />
+      <column caption='Trade Type' datatype='string' name='[trade_type]' role='dimension' type='nominal' />
+      <column caption='Volume After' datatype='integer' name='[volume_after]' role='measure' type='quantitative' />
+      <column caption='Volume Before' datatype='integer' name='[volume_before]' role='measure' type='quantitative' />
+      <column-instance column='[percent_volume_change]' derivation='Avg' name='[avg:percent_volume_change:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[volume_after]' derivation='Avg' name='[avg:volume_after:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[volume_before]' derivation='Avg' name='[avg:volume_before:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[percent_volume_change]' derivation='Sum' name='[sum:percent_volume_change:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[volume_after]' derivation='Sum' name='[sum:volume_after:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[volume_before]' derivation='Sum' name='[sum:volume_before:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/learner/AppData/Local/Temp/TableauTemp/#TableauTemp_0tigu9501nfotv19fk19x1wq3l0f.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/20/2025 11:52:35 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>company_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>1</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insider_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insider_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insider_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[trade_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trade_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shares_traded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shares_traded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shares_traded</remote-alias>
+              <ordinal>5</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trade_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_price</remote-alias>
+              <ordinal>6</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volume_before</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[volume_before]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>volume_before</remote-alias>
+              <ordinal>7</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volume_after</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[volume_after]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>volume_after</remote-alias>
+              <ordinal>8</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_volume_change</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_volume_change]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_volume_change</remote-alias>
+              <ordinal>9</ordinal>
+              <family>above_and_beyond_2</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15zstm80ln8wak176ddhv0zmz3dp].[avg:volume_after:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15zstm80ln8wak176ddhv0zmz3dp].[sum:volume_after:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.15zstm80ln8wak176ddhv0zmz3dp].[avg:percent_volume_change:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.15zstm80ln8wak176ddhv0zmz3dp].[sum:percent_volume_change:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.15zstm80ln8wak176ddhv0zmz3dp]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15zstm80ln8wak176ddhv0zmz3dp].[avg:volume_before:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15zstm80ln8wak176ddhv0zmz3dp].[sum:volume_before:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='above_and_beyond_2' id='above!and!beyond!2_C1F6E7D3280E431C93215A871A373AEE'>
+            <properties context=''>
+              <relation connection='excel-direct.1fih92h0zg9jud11fuam41dha1iv' name='above_and_beyond_2' table='[above_and_beyond_2$]' type='table'>
+                <columns gridOrigin='A1:J29:no:A1:J29:0' header='yes' outcome='6'>
+                  <column datatype='string' name='company_name' ordinal='0' />
+                  <column datatype='string' name='symbol' ordinal='1' />
+                  <column datatype='string' name='insider_name' ordinal='2' />
+                  <column datatype='date' name='trade_date' ordinal='3' />
+                  <column datatype='string' name='trade_type' ordinal='4' />
+                  <column datatype='integer' name='shares_traded' ordinal='5' />
+                  <column datatype='integer' name='trade_price' ordinal='6' />
+                  <column datatype='integer' name='volume_before' ordinal='7' />
+                  <column datatype='integer' name='volume_after' ordinal='8' />
+                  <column datatype='real' name='percent_volume_change' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='suspecious_drops (suspecious_drops)' inline='true' name='federated.0ujheey04aiw6m18yranx0hd8uf0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='suspecious_drops' name='excel-direct.1barc8s1jvrgm71gk1z2a1tqe051'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/learner/Documents/Ananya/4701/honors/suspecious_drops.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1barc8s1jvrgm71gk1z2a1tqe051' name='suspecious_drops' table='[suspecious_drops$]' type='table'>
+          <columns gridOrigin='A1:K8:no:A1:K8:0' header='yes' outcome='6'>
+            <column datatype='integer' name='trader_sid' ordinal='0' />
+            <column datatype='string' name='symbol' ordinal='1' />
+            <column datatype='string' name='company_name' ordinal='2' />
+            <column datatype='string' name='insider_name' ordinal='3' />
+            <column datatype='date' name='trade_date' ordinal='4' />
+            <column datatype='string' name='trade_type' ordinal='5' />
+            <column datatype='integer' name='shares_traded' ordinal='6' />
+            <column datatype='integer' name='trade_price' ordinal='7' />
+            <column datatype='real' name='prev_close_price' ordinal='8' />
+            <column datatype='real' name='curr_close_price' ordinal='9' />
+            <column datatype='real' name='pct_of_prev_price' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:K8:no:A1:K8:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trader_sid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trader_sid]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>trader_sid</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[symbol]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[company_name]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>company_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insider_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[insider_name]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>insider_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[trade_date]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>trade_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[trade_type]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>trade_type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shares_traded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shares_traded]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>shares_traded</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trade_price]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>trade_price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prev_close_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[prev_close_price]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>prev_close_price</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>curr_close_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[curr_close_price]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>curr_close_price</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_of_prev_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_of_prev_price]</local-name>
+            <parent-name>[suspecious_drops]</parent-name>
+            <remote-alias>pct_of_prev_price</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='suspecious_drops' datatype='table' name='[__tableau_internal_object_id__].[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]' role='measure' type='quantitative' />
+      <column caption='Company Name' datatype='string' name='[company_name]' role='dimension' type='nominal' />
+      <column caption='Curr Close Price' datatype='real' name='[curr_close_price]' role='measure' type='quantitative' />
+      <column caption='Insider Name' datatype='string' name='[insider_name]' role='dimension' type='nominal' />
+      <column caption='Pct Of Prev Price' datatype='real' name='[pct_of_prev_price]' role='measure' type='quantitative' />
+      <column caption='Prev Close Price' datatype='real' name='[prev_close_price]' role='measure' type='quantitative' />
+      <column caption='Shares Traded' datatype='integer' name='[shares_traded]' role='measure' type='quantitative' />
+      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+      <column caption='Trade Date' datatype='date' name='[trade_date]' role='dimension' type='ordinal' />
+      <column caption='Trade Price' datatype='integer' name='[trade_price]' role='measure' type='quantitative' />
+      <column caption='Trade Type' datatype='string' name='[trade_type]' role='dimension' type='nominal' />
+      <column caption='Trader Sid' datatype='integer' name='[trader_sid]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/learner/AppData/Local/Temp/TableauTemp/#TableauTemp_16rxroa1r8w4w115ugpt80fmh4ey.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2025 02:01:10 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>trader_sid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trader_sid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trader_sid</remote-alias>
+              <ordinal>0</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>1</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insider_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insider_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insider_name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[trade_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trade_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_type</remote-alias>
+              <ordinal>5</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shares_traded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[shares_traded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shares_traded</remote-alias>
+              <ordinal>6</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trade_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_price</remote-alias>
+              <ordinal>7</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prev_close_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[prev_close_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prev_close_price</remote-alias>
+              <ordinal>8</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>curr_close_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[curr_close_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>curr_close_price</remote-alias>
+              <ordinal>9</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pct_of_prev_price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pct_of_prev_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pct_of_prev_price</remote-alias>
+              <ordinal>10</ordinal>
+              <family>suspecious_drops</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='suspecious_drops' id='suspecious!drops_571FCA25BB5F468C87B9ECCD0FA98BA2'>
+            <properties context=''>
+              <relation connection='excel-direct.1barc8s1jvrgm71gk1z2a1tqe051' name='suspecious_drops' table='[suspecious_drops$]' type='table'>
+                <columns gridOrigin='A1:K8:no:A1:K8:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='trader_sid' ordinal='0' />
+                  <column datatype='string' name='symbol' ordinal='1' />
+                  <column datatype='string' name='company_name' ordinal='2' />
+                  <column datatype='string' name='insider_name' ordinal='3' />
+                  <column datatype='date' name='trade_date' ordinal='4' />
+                  <column datatype='string' name='trade_type' ordinal='5' />
+                  <column datatype='integer' name='shares_traded' ordinal='6' />
+                  <column datatype='integer' name='trade_price' ordinal='7' />
+                  <column datatype='real' name='prev_close_price' ordinal='8' />
+                  <column datatype='real' name='curr_close_price' ordinal='9' />
+                  <column datatype='real' name='pct_of_prev_price' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='suspecious_gains (suspecious_gains)' inline='true' name='federated.0oqwtdt15dyuqm16w50ui16ru6z8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='suspecious_gains' name='excel-direct.0oc2rxp1mr1kar1fvmopu0ynsvhj'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/learner/Documents/Ananya/4701/honors/suspecious_gains.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0oc2rxp1mr1kar1fvmopu0ynsvhj' name='suspecious_gains' table='[suspecious_gains$]' type='table'>
+          <columns gridOrigin='A1:G25:no:A1:G25:0' header='yes' outcome='6'>
+            <column datatype='string' name='company_name' ordinal='0' />
+            <column datatype='string' name='insider_name' ordinal='1' />
+            <column datatype='date' name='trade_date' ordinal='2' />
+            <column datatype='string' name='trade_type' ordinal='3' />
+            <column datatype='integer' name='trade_price' ordinal='4' />
+            <column datatype='real' name='price_after_7_days' ordinal='5' />
+            <column datatype='real' name='percent_gain' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G25:no:A1:G25:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[company_name]</local-name>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias>company_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>insider_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[insider_name]</local-name>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias>insider_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[trade_date]</local-name>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias>trade_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[trade_type]</local-name>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias>trade_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trade_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[trade_price]</local-name>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias>trade_price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price_after_7_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price_after_7_days]</local-name>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias>price_after_7_days</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percent_gain</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percent_gain]</local-name>
+            <parent-name>[suspecious_gains]</parent-name>
+            <remote-alias>percent_gain</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='suspecious_gains' datatype='table' name='[__tableau_internal_object_id__].[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]' role='measure' type='quantitative' />
+      <column caption='Company Name' datatype='string' name='[company_name]' role='dimension' type='nominal' />
+      <column caption='Insider Name' datatype='string' name='[insider_name]' role='dimension' type='nominal' />
+      <column caption='Percent Gain' datatype='real' name='[percent_gain]' role='measure' type='quantitative' />
+      <column caption='Price After 7 Days' datatype='real' name='[price_after_7_days]' role='measure' type='quantitative' />
+      <column caption='Trade Date' datatype='date' name='[trade_date]' role='dimension' type='ordinal' />
+      <column caption='Trade Price' datatype='integer' name='[trade_price]' role='measure' type='quantitative' />
+      <column caption='Trade Type' datatype='string' name='[trade_type]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/learner/AppData/Local/Temp/TableauTemp/#TableauTemp_0otn2uj1p7t8hh17uxsl8106iqsh.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/21/2025 02:04:08 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>company_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>suspecious_gains</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>insider_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[insider_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>insider_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>suspecious_gains</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[trade_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>suspecious_gains</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trade_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>suspecious_gains</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trade_price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[trade_price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trade_price</remote-alias>
+              <ordinal>4</ordinal>
+              <family>suspecious_gains</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price_after_7_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price_after_7_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>price_after_7_days</remote-alias>
+              <ordinal>5</ordinal>
+              <family>suspecious_gains</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percent_gain</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percent_gain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percent_gain</remote-alias>
+              <ordinal>6</ordinal>
+              <family>suspecious_gains</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='suspecious_gains' id='suspecious!gains_57BA4B4C59EE4745B525A043E3C450D8'>
+            <properties context=''>
+              <relation connection='excel-direct.0oc2rxp1mr1kar1fvmopu0ynsvhj' name='suspecious_gains' table='[suspecious_gains$]' type='table'>
+                <columns gridOrigin='A1:G25:no:A1:G25:0' header='yes' outcome='6'>
+                  <column datatype='string' name='company_name' ordinal='0' />
+                  <column datatype='string' name='insider_name' ordinal='1' />
+                  <column datatype='date' name='trade_date' ordinal='2' />
+                  <column datatype='string' name='trade_type' ordinal='3' />
+                  <column datatype='integer' name='trade_price' ordinal='4' />
+                  <column datatype='real' name='price_after_7_days' ordinal='5' />
+                  <column datatype='real' name='percent_gain' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Biggest Percentage Drops After Insider Sales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Biggest Percentage Drops After Insider Sales</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='suspecious_drops (suspecious_drops)' name='federated.0ujheey04aiw6m18yranx0hd8uf0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ujheey04aiw6m18yranx0hd8uf0'>
+            <column-instance column='[pct_of_prev_price]' derivation='Avg' name='[avg:pct_of_prev_price:qk]' pivot='key' type='quantitative' />
+            <column caption='Company Name' datatype='string' name='[company_name]' role='dimension' type='nominal' />
+            <column-instance column='[company_name]' derivation='None' name='[none:company_name:nk]' pivot='key' type='nominal' />
+            <column caption='Pct Of Prev Price' datatype='real' name='[pct_of_prev_price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ujheey04aiw6m18yranx0hd8uf0].[avg:pct_of_prev_price:qk]' field-type='quantitative' max='0.94226999999999994' min='0.8' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0ujheey04aiw6m18yranx0hd8uf0].[none:company_name:nk]</rows>
+        <cols>[federated.0ujheey04aiw6m18yranx0hd8uf0].[avg:pct_of_prev_price:qk]</cols>
+      </table>
+      <simple-id uuid='{C16E2DF6-B576-4430-9F51-A50C39EBA154}' />
+    </worksheet>
+    <worksheet name='Highest Percentage Gain After Insider Buys'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='suspecious_gains (suspecious_gains)' name='federated.0oqwtdt15dyuqm16w50ui16ru6z8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oqwtdt15dyuqm16w50ui16ru6z8'>
+            <column caption='Company Name' datatype='string' name='[company_name]' role='dimension' type='nominal' />
+            <column-instance column='[company_name]' derivation='None' name='[none:company_name:nk]' pivot='key' type='nominal' />
+            <column caption='Percent Gain' datatype='real' name='[percent_gain]' role='measure' type='quantitative' />
+            <column-instance column='[percent_gain]' derivation='Sum' name='[sum:percent_gain:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oqwtdt15dyuqm16w50ui16ru6z8].[none:company_name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:company_name:nk]' member='&quot;UnitedHealth Group Incorporated&quot;' />
+              <groupfilter function='member' level='[none:company_name:nk]' member='&quot;Walmart Inc.&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0oqwtdt15dyuqm16w50ui16ru6z8].[none:company_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0oqwtdt15dyuqm16w50ui16ru6z8].[sum:percent_gain:qk]' field-type='quantitative' max='0.039584999999999995' min='0.02' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0oqwtdt15dyuqm16w50ui16ru6z8].[none:company_name:nk]</rows>
+        <cols>[federated.0oqwtdt15dyuqm16w50ui16ru6z8].[sum:percent_gain:qk]</cols>
+      </table>
+      <simple-id uuid='{2A1F2142-D120-482D-8A86-C2433A093C88}' />
+    </worksheet>
+    <worksheet name='Percentage Volume Change - Top 4 Companies'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Percentage Volume Change - Top 4 Companies</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='above_and_beyond (above_and_beyond)' name='federated.15zstm80ln8wak176ddhv0zmz3dp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15zstm80ln8wak176ddhv0zmz3dp'>
+            <column-instance column='[percent_volume_change]' derivation='Avg' name='[avg:percent_volume_change:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[symbol]' derivation='None' name='[none:symbol:nk]' pivot='key' type='nominal' />
+            <column caption='Percent Volume Change' datatype='real' name='[percent_volume_change]' role='measure' type='quantitative' />
+            <column-instance column='[percent_volume_change]' derivation='Sum' name='[sum:percent_volume_change:qk]' pivot='key' type='quantitative' />
+            <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.15zstm80ln8wak176ddhv0zmz3dp].[sum:percent_volume_change:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.15zstm80ln8wak176ddhv0zmz3dp].[sum:percent_volume_change:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15zstm80ln8wak176ddhv0zmz3dp].[avg:percent_volume_change:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15zstm80ln8wak176ddhv0zmz3dp].[none:symbol:nk]</rows>
+        <cols>[federated.15zstm80ln8wak176ddhv0zmz3dp].[avg:percent_volume_change:qk]</cols>
+      </table>
+      <simple-id uuid='{0034A6B8-342C-4C8D-8536-C4E3C662C471}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' name='Percentage Volume Change - Top 4 Companies'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15zstm80ln8wak176ddhv0zmz3dp].[avg:percent_volume_change:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15zstm80ln8wak176ddhv0zmz3dp].[avg:percent_volume_change:qk]</field>
+            <field>[federated.15zstm80ln8wak176ddhv0zmz3dp].[none:company_name:nk]</field>
+            <field>[federated.15zstm80ln8wak176ddhv0zmz3dp].[none:symbol:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EBE0A943-EC25-46C3-BE18-650B4FDC9D4C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Biggest Percentage Drops After Insider Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ujheey04aiw6m18yranx0hd8uf0].[none:company_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EBA5ECEB-1911-4C96-880D-E8DF68C2F41F}' />
+    </window>
+    <window class='worksheet' name='Highest Percentage Gain After Insider Buys'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0oqwtdt15dyuqm16w50ui16ru6z8].[none:company_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0oqwtdt15dyuqm16w50ui16ru6z8].[none:company_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1619F771-C1C8-4DA8-BDFC-1671BF2CE8A2}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='159' name='Biggest Percentage Drops After Insider Sales' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='119' name='Highest Percentage Gain After Insider Buys' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='159' name='Percentage Volume Change - Top 4 Companies' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
